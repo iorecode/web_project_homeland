@@ -5,7 +5,7 @@
 
 .gallery__card {
   display: grid;
-  grid-template-columns: minmax(280px) 1fr;
+  grid-template-columns: minmax(280px);
   grid-template-rows: min-content min-content 1fr;
   column-gap: 1.7vw;
   margin: 0 auto;

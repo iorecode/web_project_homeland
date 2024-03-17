@@ -45,8 +45,6 @@
   position: relative;
   width: 100%;
   object-fit: cover;
-  filter: gray;
-  -webkit-filter: grayscale(1);
   filter: grayscale(1);
   margin: 0;
   padding-top: 64px;

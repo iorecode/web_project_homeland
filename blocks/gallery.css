@@ -1,0 +1,147 @@
+.gallery {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.gallery__card {
+  display: grid;
+  grid-template-columns: minmax(280px) 1fr;
+  grid-template-rows: min-content min-content 1fr;
+  column-gap: 1.7vw;
+  margin: 0 auto;
+  grid-template-areas:
+    "title author"
+    "image main"
+    "button main";
+  padding: 0 24px 0 24px;
+}
+
+.gallery__card-title {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.05;
+  color: white;
+  font-family: "Inter", Arial, sans-serif;
+  max-width: 460px;
+  min-width: 280px;
+  margin: 0;
+  margin-bottom: 48px;
+  place-self: flex-end flex-start;
+  padding-top: 80px;
+  grid-area: title;
+}
+
+.gallery__card-author {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  line-height: 1.22;
+  margin: 0;
+  margin-bottom: 48px;
+  place-self: flex-end flex-start;
+  grid-area: author;
+}
+
+.gallery__card-author_role {
+  text-transform: uppercase;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.gallery__card-description {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  line-height: 1.5;
+  margin: 0;
+  grid-area: main;
+}
+
+.gallery__button {
+  display: block;
+  width: 285px;
+  height: 8px;
+  background: rgba(2, 120, 254, 1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  line-height: 8px;
+  text-decoration: none;
+  border: 0;
+  grid-area: button;
+}
+
+.gallery__button:hover {
+  background: rgba(0, 99, 210, 1);
+  cursor: pointer;
+}
+
+.gallery__image {
+  padding-bottom: 48px;
+  object-fit: cover;
+  max-width: 100%;
+  grid-area: image;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery__card {
+    max-width: calc(100% - 48px);
+  }
+
+  .gallery__card-title {
+    font-size: 42px;
+    padding-top: 88px;
+  }
+
+  .gallery__card-author {
+    font-size: 18px;
+  }
+
+  .gallery__card-author_role {
+    font-size: 12px;
+  }
+
+  .gallery__card-description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .gallery__card {
+    grid-template-areas:
+      "title"
+      "author"
+      "image"
+      "main"
+      "button";
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .gallery__card-title {
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .gallery__card-author {
+    margin-bottom: 30px;
+  }
+
+  .gallery__card-description {
+    margin-bottom: 30px;
+  }
+
+  .gallery__image {
+    padding-bottom: 30px;
+  }
+}

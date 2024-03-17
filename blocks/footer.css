@@ -52,14 +52,16 @@
   padding: 13px 20px 13px 20px;
   border: 0;
   border-radius: 4px;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  color: white;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
   text-align: center;
   color: white;
   font-family: "Inter", Arial, sans-serif;
-  position: relative;
-  z-index: 2;
 }
 
 .footer__button:hover {

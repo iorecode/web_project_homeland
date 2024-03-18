@@ -44,7 +44,7 @@
   grid-area: author;
 }
 
-.gallery__card-author_role {
+.gallery__card-author-role {
   text-transform: uppercase;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
@@ -55,7 +55,7 @@
   margin-bottom: 8px;
 }
 
-.gallery__card-author_name {
+.gallery__card-author-name {
   margin: 0;
 }
 

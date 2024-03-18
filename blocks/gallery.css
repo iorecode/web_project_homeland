@@ -5,14 +5,15 @@
 
 .gallery__card {
   display: grid;
-  grid-template-columns: minmax(280px);
-  grid-template-rows: min-content min-content 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content min-content min-content 1fr; /* Adjusted grid-template-rows */
   column-gap: 1.7vw;
   margin: 0 auto;
   grid-template-areas:
     "title author"
     "image main"
-    "button main";
+    "button main"
+    ". main";
   padding: 0 24px 0 24px;
 }
 
@@ -60,6 +61,11 @@
   color: white;
   line-height: 1.5;
   margin: 0;
+  grid-area: extra;
+  padding-bottom: 25px;
+}
+
+.gallery__card-main {
   grid-area: main;
 }
 

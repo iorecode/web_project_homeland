@@ -52,6 +52,11 @@
   color: rgb(170, 170, 170);
   line-height: 1.2;
   margin: 0;
+  margin-bottom: 8px;
+}
+
+.gallery__card-author_name {
+  margin: 0;
 }
 
 .gallery__card-description {

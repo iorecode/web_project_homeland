@@ -14,7 +14,7 @@ Este site foi criado utilizando HTML5 e CSS3, projetado para ser totalmente resp
 
 1. Clone o repositório:
    ```
-   git clone https://github.com/seu-nome-de-usuario/tripleten-cidades-natais.git
+   git clone https://github.com/iorecode/web_project_homeland.git
    ```
 2. Abra o arquivo `index.html` em seu navegador da web para explorar as cidades natais e as histórias.
 
